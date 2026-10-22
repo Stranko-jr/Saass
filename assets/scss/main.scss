@@ -1,0 +1,31 @@
+@import 'components/profile';
+@import 'abstracts/mixins';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #6e5454;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@include tablet {
+    body {
+        padding: 16px;
+    }
+}
+
+@include mobile {
+    body {
+        padding: 10px;
+    }
+}
